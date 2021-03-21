@@ -7,11 +7,13 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
 
 
 / {
     keymap {
-        compatible = "zmk,keymap,behavior-bluetooth";
+        compatible = "zmk,keymap";
 
         default_layer {
 // -------------------
@@ -24,7 +26,7 @@
     &kp LS(F10) &kp LS(F9) &kp LC(F2)
     &kp LC(LS(F10)) &kp LC(LS(F9)) &kp LS(F6)
     &kp LA(F8) &kp LC(LS(F8)) &kp LA(F7)
-    &mt LA(F1) NUMBER_1  &kp LC(F12) &kp LA(LC(H))
+    &mt LA(F1) NUMBER_1  &out OUT_TOG &kp LA(LC(H))
             >;
         };
     };
