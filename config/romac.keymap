@@ -11,7 +11,7 @@
 
 / {
     keymap {
-        compatible = "zmk,behavior-bluetooth";
+        compatible = "zmk,keymap";
 
         default_layer {
 // -------------------
